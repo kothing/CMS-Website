@@ -34,7 +34,7 @@
                               <form method="POST" action="{{ url('admin/majorlink') }}/{{$link->id}}" aria-label="Register">
                               @csrf
                               @method('DELETE')
-                              <button type="submit" class="btn btn-dark">删除</button>
+                              <button type="submit" class="btn btn-dark" style="border-top-left-radius: 0;border-bottom-left-radius: 0;">删除</button>
                               </form>
                             </div> 
                         </td>

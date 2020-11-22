@@ -3,7 +3,7 @@
 		<li class="nav-item nav-profile">
 		  <a href="" class="nav-link">
 			<div class="profile-image">
-			  <img class="img-xs rounded-circle" src="{{asset('uploads')}}/head_img/default/26.jpg" alt="profile image">
+			  <img class="img-xs rounded-circle" src="{{asset('uploads')}}/head_img/default/a.jpg" alt="profile image">
 			  <div class="dot-indicator bg-success"></div>
 			</div>
 			<div class="text-wrapper">
@@ -96,16 +96,6 @@
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link" href="{{ url('admin/mima') }}"> 修改密码 </a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#"> 邮件配置[待完成] </a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#"> 短信配置[待完成] </a>
-			  </li>
-			  
-			  <li class="nav-item">
-				<a class="nav-link" href="#"> 支付配置[待完成] </a>
 			  </li>
 			</ul>
 		  </div>
