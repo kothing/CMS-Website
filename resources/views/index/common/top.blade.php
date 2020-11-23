@@ -13,9 +13,8 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="description" content="{{ $sys_info->web_desc }}">
-    <link rel="icon" href="{{asset('static/index')}}/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
-    <!-- Generated: 2019-04-04 16:55:45 +0200 -->
     <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.min.css">
     <script src="{{asset('static/index')}}/assets/js/require.min.js"></script>
@@ -29,16 +28,6 @@
     <!-- Dashboard Core -->
     <link href="{{asset('static/index')}}/assets/css/dashboard.css" rel="stylesheet" />
     <script src="{{asset('static/index')}}/assets/js/dashboard.js"></script>
-    <!-- c3.js Charts Plugin -->
-    <!-- <link href="{{asset('static/index')}}/assets/plugins/charts-c3/plugin.css" rel="stylesheet" /> -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/charts-c3/plugin.js"></script> -->
-    <!-- Google Maps Plugin -->
-    <!-- <link href="{{asset('static/index')}}/assets/plugins/maps-google/plugin.css" rel="stylesheet" /> -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/maps-google/plugin.js"></script> -->
-    <!-- Input Mask Plugin -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/input-mask/plugin.js"></script> -->
-    <!-- Datatables Plugin -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/datatables/plugin.js"></script> -->
   </head>
   <style>
     .card-header {
@@ -52,7 +41,7 @@
           <div class="container">
             <div class="d-flex">
               <a class="header-brand" href="{{ url('/') }}">
-                <img src="{{asset('uploads')}}/{{ $sys_info->web_logo }}" class="header-brand-img" alt="tabler logo">
+                <img src="{{asset('uploads')}}/{{ $sys_info->web_logo }}" class="header-brand-img" alt="Logo">
               </a>
               <div class="d-flex order-lg-2 ml-auto">
                 @if (Route::has('login'))

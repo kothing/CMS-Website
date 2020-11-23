@@ -14,7 +14,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="{{asset('static/index')}}/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
     <!-- Generated: 2019-04-04 16:55:45 +0200 -->
     <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>

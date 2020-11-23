@@ -1,9 +1,9 @@
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
 	<div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
 	  <a class="navbar-brand brand-logo" href="{{ url('admin/home') }}">
-		<img src="{{asset('static/admin')}}/assets/images/admin_logo.svg" alt="SiteCMS" /> </a>
+		<img src="{{asset('static/admin')}}/assets/images/admin_logo.png" alt="SiteCMS" /> </a>
 	  <a class="navbar-brand brand-logo-mini" href="index.html">
-		<img src="{{asset('static/admin')}}/assets/images/admin_logo.svg"  alt="SiteCMS" /> </a>
+		<img src="{{asset('static/admin')}}/assets/images/admin_logo.png"  alt="SiteCMS" /> </a>
 	</div>
 	<div class="navbar-menu-wrapper d-flex align-items-center">
 	  <ul class="navbar-nav">
