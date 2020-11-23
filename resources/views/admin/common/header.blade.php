@@ -7,9 +7,6 @@
 <title>@yield('title',$sys_info->web_title)---后台管理</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
-<!-- <link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/iconfonts/ionicons/css/ionicons.css">
-<link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/iconfonts/typicons/src/font/typicons.css">
-<link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css"> -->
 <link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/css/vendor.bundle.base.css">
 <!-- 手机适应 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +18,7 @@
 <link rel="stylesheet" href="{{asset('static/admin')}}/assets/css/shared/style.css">
 <!-- endinject -->
 <!-- Layout styles -->
-<link rel="stylesheet" href="{{asset('static/admin')}}/assets/css/demo_1/style.css">
+<link rel="stylesheet" href="{{asset('static/admin')}}/assets/css/layout/style.css">
 <!-- End Layout styles -->
 <link rel="shortcut icon" href="{{asset('static/admin')}}/assets/images/favicon.png" />
 </head>
@@ -55,8 +52,5 @@
 <script src="{{asset('static/admin')}}/assets/js/shared/off-canvas.js"></script>
 <script src="{{asset('static/admin')}}/assets/js/shared/misc.js"></script>
 <!-- endinject -->
-<!-- Custom js for this page-->
-<script src="{{asset('static/admin')}}/assets/js/demo_1/dashboard.js"></script>
-<!-- End custom js for this page-->
 </body>
 </html>

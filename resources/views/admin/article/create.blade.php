@@ -50,7 +50,7 @@
             </div>
           </div>
           <!-- 富文本编辑器 -->
-            <script src="{{asset('static/editor')}}/tinymce/js/tinymce/tinymce.min.js"></script>
+            <script src="{{asset('static/editor')}}/tinymce/tinymce.min.js"></script>
             <script>
             tinymce.init({
                 selector: '#content',
