@@ -13282,7 +13282,6 @@ a.icon:hover {
 
 .btn i, .dataTables_wrapper .dataTables_paginate .paginate_button i, .dataTables_wrapper .dataTables_paginate .paginate_button.current i {
   font-size: 1rem;
-  vertical-align: -2px;
 }
 
 .btn-icon {
