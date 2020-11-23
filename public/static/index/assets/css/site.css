@@ -1,0 +1,15 @@
+.fixed-search {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em 0;
+    background: #fff;
+    -moz-transition: -moz-box-shadow .2s linear;
+    -webkit-transition: -webkit-bbox-shadow .2s linear;
+    transition: box-shadow .2s linear;
+    -moz-box-shadow: 0 1px 8px #c7c7c7;
+    -webkit-box-shadow: 0 1px 8px #c7c7c7;
+    box-shadow: 0 1px 8px #c7c7c7;
+}
