@@ -21,7 +21,7 @@
                                           <a class="dropdown-item" onclick="sousuo(6)"><i class="fa fa-user-secret text-black"></i> Dogedoge</a>
                                         </div>
                                       </div>
-                                        <input type="text" name="word" baiduSug="2" class="form-control" id="tt" placeholder="安全搜索，一键直达">
+                                        <input type="text" name="word" baiduSug="2" class="form-control" id="tt" placeholder="搜索">
                                         
                                         <span class="input-group-append">
                                             <button class="btn btn-primary" type="submit">搜索</button>
