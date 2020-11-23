@@ -22,14 +22,13 @@
                                         </div>
                                       </div>
                                         <input type="text" name="word" baiduSug="2" class="form-control" id="tt" placeholder="搜索">
-                                        
                                         <span class="input-group-append">
                                             <button class="btn btn-primary" type="submit">搜索</button>
                                         </span>
                                     </div>
                                 </form>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center" style="margin-top: 8px; margin-bottom: -18px">
                                 <iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=317&h=28&align=left"></iframe>
                             </div>
                         </div>
