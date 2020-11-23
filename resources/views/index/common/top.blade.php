@@ -24,15 +24,6 @@
           baseUrl: "{{asset('static/index')}}"
       });
     </script>
-    <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?99ad7b257ee6f3dc4cba600abd1700ff";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
     <!-- Dashboard Core -->
     <link href="{{asset('static/index')}}/assets/css/dashboard.css" rel="stylesheet" />
     <script src="{{asset('static/index')}}/assets/js/dashboard.js"></script>
