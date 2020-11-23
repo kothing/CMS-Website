@@ -80,8 +80,6 @@
                     </li>
                   @endforeach
                     
-
-                    
                   </ul>
 
                 </div>
