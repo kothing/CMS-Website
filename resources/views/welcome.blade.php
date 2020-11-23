@@ -3,52 +3,37 @@
 @section('content')
 
           <div class="container">
-                <!-- 搜索框 -->
-            <div>
-                <div class="card">
-                    <div class="card-header">
-                      <iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=317&h=28&align=left"></iframe>
-                    </div>
-                    <form action="http://www.baidu.com/s" method="get" target="_blank" id="ss">
-                    <div class="card-body">
-                        <div class="input-group col-lg-8 col-md-10 m-auto">
-                        <div class="input-group-prepend">
-                            <button type="button" id="anniu" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paw text-black"></i> 百度</button>
-                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-                              <a class="dropdown-item" onclick="sousuo(1)"><i class="fa fa-paw text-black"></i> 百度</a>
-                              <a class="dropdown-item" onclick="sousuo(2)"><i class="fa fa fa-scribd text-black"></i> 搜狗</a>
-                              <a class="dropdown-item" onclick="sousuo(3)"><i class="fa fa-eercast text-black"></i> 360</a>
-                              <a class="dropdown-item" onclick="sousuo(4)"><i class="fa fa-send text-black"></i> 必应</a>
-                              <a class="dropdown-item" onclick="sousuo(6)"><i class="fa fa-user-secret text-black"></i> Dogedoge</a>
-                            </div>
-                          </div>
-                            <input type="text" name="word" baiduSug="2" class="form-control" id="tt" placeholder="安全搜索，一键直达">
-                            
-                            <span class="input-group-append">
-                                <button class="btn btn-primary" type="submit">搜索</button>
-                            </span>
-                        </div>
-
-                        <!-- 热门工具(待后续各项工具功能上线后开放) -->
-                        <!-- <div class="card-body text-center ss_con">
-                                    <div class="tags">
-                                    <div class="tag tag-primary">热门工具<span class="tag-addon"><i class="fe fe-activity"></i></span></div>
-                                      <span class="tag">One</span>
-                                      <span class="tag">Two</span>
-                                      <span class="tag">Three</span>
-                                      <span class="tag">Four</span>
-                                      <span class="tag">Five</span>
-                                      <span class="tag">Six</span>
-                                      <span class="tag">Seven</span>
-                                      <span class="tag">Eight</span>
-                                      <span class="tag">Nine</span>
-                                      <span class="tag">Ten</span>
+            <!-- 搜索框 -->
+            <div class="row row-cards">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="search-form">
+                                <form action="http://www.baidu.com/s" method="get" target="_blank" id="ss">
+                                    <div class="input-group col-lg-8 col-md-10 m-auto">
+                                    <div class="input-group-prepend">
+                                        <button type="button" id="anniu" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-paw text-black"></i> 百度</button>
+                                        <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                          <a class="dropdown-item" onclick="sousuo(1)"><i class="fa fa-paw text-black"></i> 百度</a>
+                                          <a class="dropdown-item" onclick="sousuo(2)"><i class="fa fa fa-scribd text-black"></i> 搜狗</a>
+                                          <a class="dropdown-item" onclick="sousuo(3)"><i class="fa fa-eercast text-black"></i> 360</a>
+                                          <a class="dropdown-item" onclick="sousuo(4)"><i class="fa fa-send text-black"></i> 必应</a>
+                                          <a class="dropdown-item" onclick="sousuo(6)"><i class="fa fa-user-secret text-black"></i> Dogedoge</a>
+                                        </div>
+                                      </div>
+                                        <input type="text" name="word" baiduSug="2" class="form-control" id="tt" placeholder="安全搜索，一键直达">
+                                        
+                                        <span class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">搜索</button>
+                                        </span>
                                     </div>
-                        </div> -->
-                        <!-- 工具预留 -->
-                        
+                                </form>
+                            </div>
+                            <div class="text-center">
+                                <iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=317&h=28&align=left"></iframe>
+                            </div>
+                        </div>
                     </div>
-                </form>
                 </div>
             </div>
             <!-- END搜索框 -->
@@ -160,8 +145,6 @@
                 </div>
                 </div>
               </div>
-
-
               </div> 
           </div>
 
@@ -170,10 +153,39 @@
     if(window.screen.width < 700){
         document.getElementById('remen').style.display = 'none';
     }
-  </script>
-<!-- 百度联想搜索 -->
-<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+</script>
+
+<!-- Search fixed-->
+<script type="text/javascript">
+    function getTop(element) {
+        let realTop = element.offsetTop;
+        let parent = element.offsetParent;
+        while (parent !== null) {
+            realTop += parent.offsetTop;
+            parent = parent.offsetParent;
+        }
+        return realTop;
+    }
+    let search = document.getElementById("search-form");
+    let rect = search.getBoundingClientRect();
+    let insert = document.createElement("div");
+    search.parentNode.replaceChild(insert,search);
+    insert.appendChild(search);
+    insert.style.height = rect.height + "px";
+    let titleTop = getTop(search);
+    document.onscroll = function(){
+        let btop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(btop > titleTop){
+            search.className = "clearfix fixed-search";
+        } else {
+            search.className = "clearfix";
+        }
+    }
+</script>
+
+<!--jQuery-->
 <script src="https://cdn.staticfile.org/jquery/2.2.3/jquery.min.js"></script>
+
 <!-- 搜索方式 -->
 <script type="text/javascript">
     function sousuo(ss){
@@ -204,4 +216,7 @@
     }
     };
 </script>
+
+<!-- 百度联想搜索 -->
+<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
 @endsection
