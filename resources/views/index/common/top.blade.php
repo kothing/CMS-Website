@@ -12,10 +12,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>
     <meta name="description" content="{{ $sys_info->web_desc }}">
     <link rel="icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
-    <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.6.2/css/font-awesome.min.css">
     <script src="{{asset('static/index')}}/assets/js/require.min.js"></script>
     <script>
@@ -41,7 +41,7 @@
           <div class="container">
             <div class="d-flex">
               <a class="header-brand" href="{{ url('/') }}">
-                <img src="{{asset('uploads')}}/{{ $sys_info->web_logo }}" class="header-brand-img" alt="Logo">
+                <img src="{{asset('uploads')}}/{{ $sys_info->web_logo }}" class="header-brand-img" alt="Logo">@yield('title',$sys_info->web_title)
               </a>
               <div class="d-flex order-lg-2 ml-auto">
                 @if (Route::has('login'))
