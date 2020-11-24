@@ -21,7 +21,7 @@ class LinksTableSeeder extends Seeder
             array (
                 'id' => 4,
                 'title' => 'Kothing',
-                'url' => 'https://www.kothing.ren/',
+                'url' => 'https://www.kothing.com/',
                 'sort' => 0,
                 'status' => 1,
                 'created_at' => '2019-12-12 12:36:34',
