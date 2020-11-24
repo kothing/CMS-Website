@@ -392,7 +392,7 @@
 }
 
 .navbar.default-layout .navbar-brand-wrapper .navbar-brand img {
-  width         : 170px;
+  height        : 46px;
   max-width     : 100%;
   margin        : auto;
   vertical-align: middle;
@@ -853,7 +853,7 @@
 
 /* Footer */
 .footer {
-  background        : #dbdbdb;
+  background        : #f3f3f3;
   padding           : 20px 1rem;
   transition        : all 0.25s ease;
   -moz-transition   : all 0.25s ease;
@@ -942,7 +942,7 @@
 }
 
 .content-wrapper {
-  background       : #F3F3F3;
+  background       : #f8f8f8;
   padding          : 1.5rem 1.7rem;
   width            : 100%;
   -webkit-box-flex : 1;
