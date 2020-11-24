@@ -16,7 +16,6 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
-    <!-- Generated: 2019-04-04 16:55:45 +0200 -->
     <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>
     <script src="{{asset('static/index')}}/assets/js/require.min.js"></script>
     <script>
@@ -27,16 +26,6 @@
     <!-- Dashboard Core -->
     <link href="{{asset('static/index')}}/assets/css/dashboard.css" rel="stylesheet" />
     <!-- <script src="{{asset('static/index')}}/assets/js/dashboard.js"></script> -->
-    <!-- c3.js Charts Plugin -->
-    <!-- <link href="{{asset('static/index')}}/assets/plugins/charts-c3/plugin.css" rel="stylesheet" /> -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/charts-c3/plugin.js"></script> -->
-    <!-- Google Maps Plugin -->
-    <!-- <link href="{{asset('static/index')}}/assets/plugins/maps-google/plugin.css" rel="stylesheet" /> -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/maps-google/plugin.js"></script> -->
-    <!-- Input Mask Plugin -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/input-mask/plugin.js"></script> -->
-    <!-- Datatables Plugin -->
-    <!-- <script src="{{asset('static/index')}}/assets/plugins/datatables/plugin.js"></script> -->
   </head>
   <body class="">
     <div class="page">
