@@ -2,6 +2,8 @@
 
 网址导航系统
 
+Demo http://site.nice-boy.com
+
 ### 安装步骤
 
 -   上传文件到 web 服务器目录
