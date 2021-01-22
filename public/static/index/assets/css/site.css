@@ -13,3 +13,17 @@
     -webkit-box-shadow: 0 1px 8px #c7c7c7;
     box-shadow: 0 1px 8px #c7c7c7;
 }
+
+.weather-box {
+    margin-top: 8px;
+    margin-bottom: -18px
+}
+
+.featured-card {
+    border: 1px solid transparent;
+}
+
+.featured-card:hover {
+    color: #495057;
+    background-color: rgba(0, 0, 0, 0.04);
+}
