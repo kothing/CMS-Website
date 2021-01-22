@@ -16,7 +16,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('static/index')}}/favicon.ico" />
-    <title>@yield('title',$sys_info->web_title)---{{ $sys_info->web_desc }}</title>
+    <title>@yield('title',$sys_info->web_title) - {{ $sys_info->web_desc }}</title>
     <script src="{{asset('static/index')}}/assets/js/require.min.js"></script>
     <script>
       requirejs.config({
