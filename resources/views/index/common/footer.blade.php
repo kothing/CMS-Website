@@ -12,7 +12,7 @@
           @endforeach
           <div class="col-6 col-md-3">
             <ul class="list-unstyled mb-0">
-              <li><a href="{{ url('/links') }}">更多……</a></li>
+              <li><a href="{{ url('/links') }}">更多</a></li>
             </ul>
           </div>
         </div>
