@@ -15,8 +15,7 @@
 }
 
 .weather-box {
-    margin-top: 8px;
-    margin-bottom: -18px
+    margin-bottom: -12px
 }
 
 .featured-card {
@@ -26,4 +25,8 @@
 .featured-card:hover {
     color: #495057;
     background-color: rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+  min-height: 0;
 }
