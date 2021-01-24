@@ -3,42 +3,6 @@
 @section('content')
 
     <div class="container">
-        <!-- 搜索框 -->
-        <div class="row row-cards">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div id="search-form">
-                            <form action="http://www.baidu.com/s" method="get" target="_blank" id="form-action">
-                                <div class="input-group col-lg-8 col-md-10 m-auto">
-                                    <div class="input-group-prepend">
-                                        <button type="button" id="current-search" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa fa-paw"></i> 百度
-                                        </button>
-                                        <div class="dropdown-menu" x-placement="bottom-start">
-                                          <a class="dropdown-item" onclick="onSearch(1)"><i class="fa fa-paw"></i> 百度</a>
-                                          <a class="dropdown-item" onclick="onSearch(2)"><i class="fa fa fa-google"></i> 谷歌</a>
-                                          <a class="dropdown-item" onclick="onSearch(3)"><i class="fa fa-send"></i> 必应</a>
-                                          <a class="dropdown-item" onclick="onSearch(4)"><i class="fa fa fa-scribd"></i> 搜狗</a>
-                                          <a class="dropdown-item" onclick="onSearch(5)"><i class="fa fa-user-secret"></i> Dogedoge</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="word" baiduSug="2" class="form-control" id="search-input" placeholder="搜索"/>
-                                    <span class="input-group-append">
-                                        <button class="btn btn-primary" type="submit">搜索</button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="weather-box text-center">
-                            <iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=54511&w=317&h=28&align=left"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END搜索框 -->
-    
         <div class="row row-cards row-deck">
             
             <!-- 用户自定义网址预留Start -->
@@ -159,75 +123,4 @@
     </div> 
 </div>
 
-<!-- 手机设备，隐藏热门榜单 -->
-<script>
-    if(window.screen.width < 700){
-        document.getElementById('remen').style.display = 'none';
-    }
-</script>
-
-<!-- Search fixed-->
-<script type="text/javascript">
-    function getTop(element) {
-        let realTop = element.offsetTop;
-        let parent = element.offsetParent;
-        while (parent !== null) {
-            realTop += parent.offsetTop;
-            parent = parent.offsetParent;
-        }
-        return realTop;
-    }
-    let search_form = document.getElementById("search-form");
-    let rect = search_form.getBoundingClientRect();
-    let insert = document.createElement("div");
-    search_form.parentNode.replaceChild(insert, search_form);
-    insert.appendChild(search_form);
-    insert.style.height = rect.height + "px";
-    let titleTop = getTop(search_form);
-    document.onscroll = function(){
-        let btop = document.body.scrollTop || document.documentElement.scrollTop;
-        if(btop > titleTop){
-            search_form.className = "clearfix fixed-search";
-        } else {
-            search_form.className = "clearfix";
-        }
-    }
-</script>
-
-<!--jQuery-->
-<script src="https://cdn.staticfile.org/jquery/2.2.3/jquery.min.js"></script>
-
-<!-- 搜索方式 -->
-<script type="text/javascript">
-    function onSearch(value){
-        if(value === 1){ //百度
-            $('#form-action').attr('action','https://wwww.baidu.com/s');
-            $('#search-input').attr('name','word');
-            $('#current-search').text('百度');
-        }
-        if(value === 2){ //百度
-            $('#form-action').attr('action','https://www.google.com/search');
-            $('#search-input').attr('name','word');
-            $('#current-search').text('谷歌');
-        }
-        else if(value === 3){ //必应
-            $('#form-action').attr('action','https://cn.bing.com/search');
-            $('#search-input').attr('name','q');
-            $('#current-search').text('必应');
-        }
-        else if(value === 4){ //搜狗
-            $('#form-action').attr('action','https://www.sogou.com/web');
-            $('#search-input').attr('name','query');
-            $('#current-search').text('搜狗');
-        }
-        else if(value === 5){ //dogedoge
-            $('#form-action').attr('action','https://www.dogedoge.com/results');
-            $('#search-input').attr('name','q');
-            $('#current-search').text('Dogedoge');
-        }
-    };
-</script>
-
-<!-- 百度联想搜索 -->
-<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
 @endsection
