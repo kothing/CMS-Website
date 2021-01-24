@@ -27,6 +27,14 @@
     background-color: rgba(0, 0, 0, 0.04);
 }
 
+.featured-card a {
+    color: rgb(73, 80, 87);
+}
+
+.featured-card:hover a {
+    color: rgb(70, 127, 207);
+}
+
 .card-header {
   min-height: 0;
 }
