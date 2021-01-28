@@ -4,7 +4,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>@yield('title',$sys_info->web_title)---后台管理</title>
+<title>@yield('title',$sys_info->web_title) - 后台管理</title>
 <!-- plugins:css -->
 <link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="{{asset('static/admin')}}/assets/vendors/css/vendor.bundle.base.css">
