@@ -56,6 +56,6 @@ php artisan cache:clear
 ```
 
 ### 使用
-后端登录/admin
-默认账户是：admin
+后端登录/admin  
+默认账户是：admin  
 默认秘密：123456
