@@ -147,14 +147,14 @@ return [
 
     'attributes' => [
         'name'                  => '名称',
-        'imgurl'               => '封面图',
+        'imgurl'                => '封面图',
         'username'              => '用户名',
         'email'                 => '邮箱',
         'first_name'            => '名',
         'last_name'             => '姓',
         'password'              => '密码',
         'c_content'             => '评论内容',
-        'password2'              => '新密码',
+        'password2'             => '新密码',
         'password_confirmation' => '确认密码',
         'city'                  => '城市',
         'country'               => '国家',
@@ -180,6 +180,6 @@ return [
         'time'                  => '时间',
         'available'             => '可用的',
         'size'                  => '大小',
-        'tongji'                  => '网站统计',
+        'stats_code'            => '网站统计',
     ],
 ];

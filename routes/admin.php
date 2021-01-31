@@ -9,7 +9,7 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
         Route::get('/clean', 'HomeController@clean_cache'); //清理缓存
         Route::get('/home', 'HomeController@index')->name('admin'); //管理首页
         Route::resource('/category', 'CategoryController');  //文章分类
-        Route::resource('/daohang', 'NavigationCategoryController');  //导航分类
+        Route::resource('/navcats', 'NavigationCategoryController');  //导航分类
         Route::resource('/navigation', 'NavigationController');  //导航网址
         Route::get('/shoulu', 'NavigationController@shoulu'); //收录审核
         Route::get('/shoulu/inurl/{id}', 'NavigationController@inurl'); //收录审核

@@ -10,7 +10,7 @@
                     <h4 class="card-title">导航分类添加</h4>
                     @include('admin.common.error')
                     @include('admin.common.success')
-                        <form class="forms-sample" method="post" action="{{ url('admin/daohang') }}">
+                        <form class="forms-sample" method="post" action="{{ url('admin/navcats') }}">
                         @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail1">分类名称</label>
@@ -21,7 +21,7 @@
                                 <input type="number" class="form-control" id="exampleInputPassword1" placeholder="sort" value="0" name="sort" value="{{ old('sort') }}">
                             </div>
                             <button type="submit" class="btn btn-success mr-2">提交</button>
-                            <a href="{{ url('admin/daohang') }}" class="btn btn-dark">返回</a>
+                            <a href="{{ url('admin/navcats') }}" class="btn btn-dark">返回</a>
                             </form>
                   </div>
                 </div>

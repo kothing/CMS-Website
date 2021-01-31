@@ -41,7 +41,7 @@ class NavigationCategoryController extends Controller
         $category->sort = $request->sort;
         $category->save();
         if($category){
-            return redirect('admin/daohang')->with('success_msg', '提交成功！');
+            return redirect('admin/navcats')->with('success_msg', '提交成功！');
         }else{
             return back()->withInput();
         }
@@ -88,7 +88,7 @@ class NavigationCategoryController extends Controller
         $category->sort = $request->sort;
         $category->save();
         if($category){
-            return redirect('admin/daohang')->with('success_msg', '修改成功');
+            return redirect('admin/navcats')->with('success_msg', '修改成功');
         }else{
             return back()->withInput();
         }
@@ -109,7 +109,7 @@ class NavigationCategoryController extends Controller
         $category = NavigationCategory::find($id);
         $category->delete();
         if($category){
-            return redirect('admin/daohang')->with('success_msg', '删除成功');
+            return redirect('admin/navcats')->with('success_msg', '删除成功');
         }else{
             return back()->withInput();
         }

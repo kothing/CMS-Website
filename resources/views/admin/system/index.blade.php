@@ -25,8 +25,8 @@
                                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="网站域名地址" name="web_url" value="{{ $sys->web_url }}">
                             </div>
                             <div class="form-group">
-                              <label for="exampleTextarea1">统计代码[若不需要，可填写：无]</label>
-                              <textarea class="form-control" id="exampleTextarea1" rows="2" name="tongji">{{ $sys->tongji }}</textarea>
+                              <label for="exampleTextarea1">统计代码</label>
+                              <textarea class="form-control" id="exampleTextarea1" rows="2" name="stats_code">{{ $sys->stats_code }}</textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">网站logo图</label><br>
@@ -34,7 +34,7 @@
                                 <input type="file" class="form-control" id="exampleInputPassword1" placeholder="网站logo图" name="web_logo" value="{{ $sys->web_logo }}">
                             </div>
                             <button type="submit" class="btn btn-success mr-2">修改</button>
-                            </form>
+                        </form>
                   </div>
                 </div>
               </div>

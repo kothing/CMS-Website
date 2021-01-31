@@ -37,7 +37,7 @@
                   <a target="_blank" href="https://github.com/kothing/SiteCMS/blob/master/LICENSE">使用协议</a>
               </li>
               <!-- 统计代码 -->
-              <li class="list-inline-item">{!! $sys_info->tongji !!}</li>
+              <li class="list-inline-item">{!! $sys_info->stats_code !!}</li>
               <!-- 统计代码 -->
             </ul>
           </div>

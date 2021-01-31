@@ -22,7 +22,7 @@ class NavigationsTableSeeder extends Seeder
                 'id' => 3,
                 'title' => '爱淘宝',
                 'navigation_category_id' => 2,
-                'url' => 'https://ai.taobao.com/?pid=mm_26820200_7656770_55752061',
+                'url' => 'https://ai.taobao.com/',
                 'sort' => 0,
                 'views' => 0,
                 'status' => 1,

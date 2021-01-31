@@ -20,7 +20,6 @@ class SystemInfoController extends Controller
         $validatedData = $request->validate([
             'web_title' => 'required',
             'web_logo' => 'image',
-            'tongji' => 'required',
             'web_desc' => 'required',
             'web_url' => 'required|url',
         ]);
@@ -33,7 +32,7 @@ class SystemInfoController extends Controller
         $sys->web_title = $request->web_title;
         $sys->web_desc = $request->web_desc;
         $sys->web_url = $request->web_url;
-        $sys->tongji = $request->tongji;
+        $sys->stats_code = $request->stats_code;
         $sys->save();
         if($sys){
             return redirect('admin/system')->with('success_msg', '修改成功');

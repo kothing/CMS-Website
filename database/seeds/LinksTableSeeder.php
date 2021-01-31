@@ -24,8 +24,8 @@ class LinksTableSeeder extends Seeder
                 'url' => 'https://www.kothing.com/',
                 'sort' => 0,
                 'status' => 1,
-                'created_at' => '2019-12-12 12:36:34',
-                'updated_at' => '2019-12-12 12:36:34',
+                'created_at' => '2020-12-12 01:01:00',
+                'updated_at' => '2020-12-12 01:01:00',
             ),
             1 => 
             array (
@@ -34,18 +34,18 @@ class LinksTableSeeder extends Seeder
                 'url' => 'http://site.kothing.com',
                 'sort' => 0,
                 'status' => 1,
-                'created_at' => '2019-12-24 18:39:49',
-                'updated_at' => '2019-12-24 18:39:49',
+                'created_at' => '2020-12-12 01:01:00',
+                'updated_at' => '2020-12-12 01:01:00',
             ),
             2 => 
             array (
                 'id' => 6,
-                'title' => '开源地址',
+                'title' => '网址导航源码',
                 'url' => 'https://github.com/kothing/SiteCMS',
                 'sort' => 0,
                 'status' => 1,
-                'created_at' => '2019-12-24 18:41:00',
-                'updated_at' => '2019-12-30 11:28:21',
+                'created_at' => '2020-12-12 01:01:00',
+                'updated_at' => '2020-12-12 01:01:00',
             ),
         ));
         
